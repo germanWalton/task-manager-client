@@ -4,7 +4,7 @@ A modern task management application built with React and Node.js, featuring use
 
 ## 🚀 Live Demo
 
-You can access the live application here: [Task Manager App](https://your-deployed-app-url.com)
+You can access the live application here: https://task-manager-client-lac.vercel.app/login
 
 ## ✨ Features
 
@@ -42,7 +42,7 @@ You can access the live application here: [Task Manager App](https://your-deploy
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/task-manager-client.git
+git clone https://github.com/germanWalton/task-manager-client.git
 cd task-manager-client
 ```
 
