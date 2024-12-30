@@ -4,7 +4,8 @@ A modern task management application built with React and Node.js, featuring use
 
 ## 🚀 Live Demo
 
-You can access the live application here: (https://task-manager-client-lac.vercel.app/login)
+You can access the live application here: task-manager-client-lac.vercel.app
+
 
 ## ✨ Features
 
