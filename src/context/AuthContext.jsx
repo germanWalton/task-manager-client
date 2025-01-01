@@ -9,13 +9,17 @@ const initialState = {
 };
 
 const authReducer = (state, action) => {
-  console.log("action", action);
   switch (action.type) {
     case "LOGIN":
-      localStorage.setItem("token", action.payload.data.token);
+      const token = action.payload.data?.token || action.payload.token;
+      const user = action.payload.data?.user || action.payload.user;
+
+      if (token) {
+        localStorage.setItem("token", token);
+      }
       return {
         ...state,
-        user: action.payload.data.user,
+        user: user,
         isAuthenticated: true,
         loading: false,
       };
@@ -55,9 +59,14 @@ export const AuthProvider = ({ children }) => {
           console.log("token", token);
           console.log("responseAuthProvider", response);
           if (response.ok) {
-            const data = await response.json();
-            console.log("dataProvider", data);
-            dispatch({ type: "LOGIN", payload: { user: data.user, token } });
+            const tokenParts = token.split(".");
+            const payload = JSON.parse(atob(tokenParts[1]));
+
+            const user = {
+              id: payload.userId,
+              email: payload.email,
+            };
+            dispatch({ type: "LOGIN", payload: { token, user } });
           } else {
             dispatch({ type: "LOGOUT" });
           }

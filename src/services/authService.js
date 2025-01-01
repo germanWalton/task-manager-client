@@ -36,7 +36,7 @@ export const authService = {
   },
 
   verifyToken: async (token) => {
-    const response = await fetch(`${API_URL}/api/auth/verify`, {
+    const response = await fetch(`${API_URL}/api/auth/validate`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -6,7 +6,6 @@ A modern task management application built with React and Node.js, featuring use
 
 You can access the live application here: https://task-manager-client-lac.vercel.app
 
-
 ## ✨ Features
 
 - 👤 User authentication (login/register)
@@ -19,6 +18,7 @@ You can access the live application here: https://task-manager-client-lac.vercel
 ## 🛠️ Tech Stack
 
 - **Frontend:**
+
   - React 18
   - React Router v6
   - React Hook Form
@@ -42,22 +42,26 @@ You can access the live application here: https://task-manager-client-lac.vercel
 ### Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/germanWalton/task-manager-client.git
 cd task-manager-client
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env` file in the root directory with the following content:
+
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -104,64 +108,27 @@ src/
 
 ### Environment Variables
 
-|
- Variable 
-|
- Description 
-|
- Default 
-|
-|
-----------
-|
--------------
-|
----------
-|
-|
- VITE_API_URL 
-|
- Backend API URL 
-|
- http://localhost:5000/api 
-|
+VITE_API_URL http://localhost:5000/api
 
 ### Available Scripts
 
-|
- Command 
-|
- Description 
-|
-|
----------
-|
--------------
-|
+## Command
+
 |
 `npm run dev`
-|
- Start development server 
-|
+: Start development server
 |
 `npm run build`
-|
- Build for production 
-|
+: Build for production
 |
 `npm run preview`
-|
- Preview production build 
-|
+: Preview production build
 |
 `npm run lint`
+: Run ESLint
 |
- Run ESLint 
-|
-
-## 📱 Screenshots
-
-[Add screenshots of your application here]
+`npm run test`
+: Run tests
 
 ## 🔐 Authentication
 
@@ -198,17 +165,9 @@ This project is configured for deployment on Vercel. To deploy:
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👤 Author
 
-Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+German Walton
 
-## 🙏 Acknowledgments
-
-- Mention any resources or people that helped you
-- Credit any third-party assets or inspiration
+- GitHub: [@germanWalton](https://github.com/germanWalton)
+- LinkedIn: [German Walton](https://linkedin.com/in/germanwalton)

@@ -4,7 +4,7 @@ import { authService } from "../services/authService";
 
 export const useAuth = () => {
   const { user, isAuthenticated, loading, dispatch } = useContext(AuthContext);
-
+  console.log("user", user);
   const login = async (email, password) => {
     try {
       const data = await authService.login({ email, password });

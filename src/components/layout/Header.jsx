@@ -1,30 +1,20 @@
-import { motion } from 'framer-motion';
-import { useAuth } from '../../hooks/useAuth';
-import { LogOut } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useAuth } from "../../hooks/useAuth";
+import { LogOut } from "lucide-react";
 
 const Header = () => {
   const { user, logout } = useAuth();
-
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className="bg-white shadow-md"
-    >
+    <motion.header initial={{ y: -100 }} animate={{ y: 0 }} className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <motion.h1 
-            className="text-2xl font-bold text-gray-900"
-            whileHover={{ scale: 1.05 }}
-          >
+          <motion.h1 className="text-2xl font-bold text-gray-900" whileHover={{ scale: 1.05 }}>
             Task Manager
           </motion.h1>
-          
+
           {user && (
             <div className="flex items-center space-x-4">
-              <span className="text-gray-600">
-                Welcome to Task Manager!!
-              </span>
+              <span className="text-gray-600">Welcome  {user.email}</span>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
